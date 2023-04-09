@@ -1,0 +1,377 @@
+.darkness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 95;
+}
+.portfolioModal {
+  width: 80%;
+  height: auto;
+  background-color: #5333cd;
+  border: 7px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.portfolioModal .mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+.portfolioModal .mainContainer .companyArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 80px 0 80px;
+  border-right: 3px solid black;
+}
+
+.portfolioModal .closeBtnArea {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.portfolioModal .closeBtnArea .closeBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+.portfolioModal .closeBtnArea .closeBtn:hover {
+  cursor: pointer;
+}
+
+.portfolioModal .companySearch {
+  padding: 10px;
+  margin-top: 20px;
+}
+.portfolioModal .companySearch .companyInputBox {
+  display: flex;
+  /* padding: 16px; */
+  border: 7px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.portfolioModal .companySearch .companyInputBox .companyInput {
+  flex: 1;
+  margin: 0;
+  background-color: black;
+  border: 5px solid #5333cd;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  font-size: 18px;
+  padding: 16px;
+  color: white;
+}
+
+.portfolioModal .companySearch .companyInputBox .companyBtn {
+  cursor: pointer;
+  border: 5px solid #5333cd;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  padding: 14px;
+  margin: 0;
+  color: #5333cd;
+  background-color: black;
+  font-size: 24px;
+}
+.companyEx {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  border: 6px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: #5333cd;
+  color: white;
+  padding: 10px;
+  margin: 0 0 50px 0;
+}
+
+.companyEx > h3 {
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+.companyEx .ex1 {
+  border-right: 5px double black;
+}
+
+.portfolioModal .imgSearchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: white; */
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+.portfolioModal .imgSearch {
+  padding: 10px;
+  margin: 20px;
+}
+
+.portfolioModal .imgSearch .imgInputBox {
+  display: flex;
+  flex-direction: row;
+  border: 7px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.portfolioModal .imgSearch .imgInputBox .imgInput {
+  flex: 1;
+  margin: 0;
+  background-color: black;
+  border: 5px solid #f4e603;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  font-size: 20px;
+  padding: 16px;
+  color: white;
+}
+.portfolioModal .imgSearch .imgInputBox .imgBtn {
+  cursor: pointer;
+  border: 5px solid #f4e603;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  padding: 14px;
+  padding-bottom: 15.5px;
+  margin: 0;
+  color: #f4e603;
+  background-color: black;
+  font-size: 26px;
+}
+
+.portfolioModal .imgArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.portfolioModal .imgArea .images {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 10px solid black;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.isLoadingImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 100px;
+}
+
+.portfolioModal .imgArea .images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  border-radius: 20px;
+  border: 8px solid #5333cd;
+  object-fit: cover;
+}
+
+.portfolioModal .imgArea .addImgBtnArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 400px;
+}
+
+.portfolioModal .imgArea .addImgBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 75px;
+  color: white;
+  /* background-color: white; */
+  border: 6px solid black;
+  border-radius: 50%;
+  font-size: 60px;
+  margin: 0 0 0 50px;
+  padding-top: 5px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.portfolioModal .imgArea .addImgBtn:hover {
+  cursor: pointer;
+}
+
+.portfolioTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0 -40px 0;
+  color: white;
+  font-family: "KIMM_Bold";
+}
+
+.portfolioTitle > h1 {
+  padding: 0 10px 0 20px;
+  border-left: 7px solid #f4e603;
+  border-radius: 0 20px 20px 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 78vh;
+  gap: 100px 50px;
+  overflow: hidden;
+  /* padding: 100px 50px; */
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 350px;
+  max-width: 350px;
+  height: 300px;
+  background: #5333cd;
+  border: 5px solid black;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.container .card:hover {
+  height: 400px;
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background-color: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+  top: -100px;
+  scale: 0.55;
+  /* box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15); */
+}
+
+.container .card .imgBx {
+  border-radius: 30px;
+  border: 5px solid black;
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content {
+  position: absolute;
+  top: 235px;
+  width: 100%;
+  padding: 0 30px;
+  height: 60px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+}
+
+.container .card:hover .content {
+  top: 130px;
+  height: 250px;
+  overflow: auto;
+}
+.container .card .content h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.container .card .content p {
+  font-size: 1.1em;
+  word-break: break-all;
+  font-weight: 700;
+}
+.container .card .content span {
+  font-size: 1.1em;
+  word-break: break-all;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.container .card .content > button {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid red;
+  /* display: none; */
+  opacity: 0;
+}
+.container .card:hover .content > button {
+  /* display: inline-block; */
+  opacity: 1;
+  transition: 1s;
+}
+.container .card .content > button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: 3px solid red;
+  transition: 0.5s;
+}
+.container .addPortBtnOutLine {
+  border: 5px solid #f4e603;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .addPortBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+.container .addPortBtn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s;
+}

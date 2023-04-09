@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Footer from "./component/footer/Footer";
+import Header from "./component/header/Header";
+import Link from "./screen/Link";
 
 function App() {
+  const [user, setUser] = useState([]);
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      axios
+        .get("https://port-0-auth-6g2llfxqu2r0.sel3.cloudtype.app/getuser", {
+          method: "GET",
+          headers: {
+            Authorization: localStorage.getItem("token"),
+          },
+        })
+        .then((res) => setUser(res.data));
+    }
+  }, []);
+
+  console.log("앱 유저", user);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header user={user} />
+      <Link user={user} />
+      <Footer />
+    </BrowserRouter>
   );
 }
 

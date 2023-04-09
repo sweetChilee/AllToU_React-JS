@@ -1,0 +1,7 @@
+.tag-enter {
+  opacity: 0;
+}
+.tag-enter-active {
+  opacity: 1;
+  transition: opacity 5s;
+}

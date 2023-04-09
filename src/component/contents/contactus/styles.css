@@ -1,0 +1,33 @@
+.card1-enter {
+  opacity: 0;
+  transform: translateY(10%);
+}
+.card1-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+}
+
+/* card2 */
+.card2-enter {
+  opacity: 0;
+  transform: translateY(10%);
+}
+.card2-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+  transition-delay: 150ms;
+}
+
+/* card3 */
+.card3-enter {
+  opacity: 0;
+  transform: translateY(10%);
+}
+.card3-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+  transition-delay: 250ms;
+}

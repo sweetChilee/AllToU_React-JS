@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delicious+Handrawn&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(44, 44, 44);
+  border: none;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.triangle {
+  opacity: 0;
+  width: 80%;
+  height: 0;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 22px;
+}
+.cardContainer:hover .triangle {
+  opacity: 0.9;
+  height: 333px;
+  transition: opacity 0.5s, height 0.5s;
+}
+
+.titleName {
+  text-align: center;
+}
+
+.titleName h1 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 10px;
+  font-size: 10rem;
+  color: white;
+  margin: 70px;
+}
+
+.arrow {
+  font-size: 32px;
+  text-decoration: none;
+  pointer-events: none;
+  color: black;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .titleName h1 {
+    font-size: 8rem;
+    margin: 40px;
+  }
+  .cardContainer:hover .triangle {
+    height: 235px;
+  }
+}
+@media (max-width: 860px) {
+  .titleName h1 {
+    font-size: 6rem;
+  }
+  .cardContainer:hover .triangle {
+    height: 197px;
+  }
+}
+@media (max-width: 768px) {
+  .titleName h1 {
+    font-size: 5rem;
+  }
+  .cardContainer:hover .triangle {
+    height: 178px;
+  }
+}
+@media (max-width: 620px) {
+  .cardContainer {
+    margin: 10px;
+  }
+  .titleName h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+  .cardContainer:hover .triangle {
+    height: 158px;
+  }
+}
+@media (max-width: 400px) {
+  .titleName h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 30px;
+  }
+  .cardContainer:hover .triangle {
+    height: 118px;
+  }
+}
+@media (max-width: 280px) {
+  .titleName h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 20px;
+  }
+  .cardContainer:hover .triangle {
+    height: 80px;
+  }
+}

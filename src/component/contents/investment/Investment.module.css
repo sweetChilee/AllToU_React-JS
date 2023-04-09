@@ -1,0 +1,217 @@
+.investmentTitle {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.investmentTitle > h1 {
+  font-size: 40px;
+}
+.container {
+  width: auto;
+  height: auto;
+  margin: 15px;
+}
+
+.container .searchArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.container .searchArea .searchHead {
+  color: black;
+  width: 50%;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.container .searchArea .searchHead .inputArea {
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-size: 24px;
+  background-color: #5333cd;
+  border: 7px solid black;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  /* padding: 10px; */
+}
+.container .searchArea .searchHead .inputArea .inputBox {
+  width: 95%;
+  font-size: 24px;
+  padding: 10px;
+  background-color: black;
+  border: 7px solid #5333cd;
+  border-radius: 15px 0 0 0;
+  outline: #f4e603;
+  color: white;
+  border-right: none;
+}
+.container .searchArea .searchHead .inputArea button {
+  width: auto;
+  font-size: 24px;
+  padding: 10px;
+  background-color: black;
+  border: 7px solid #5333cd;
+  border-radius: 0 15px 0 0;
+  color: white;
+}
+.container .searchArea .searchHead .inputArea button:hover {
+  cursor: pointer;
+}
+
+.container .searchArea .searchHead .serachDropDownBox {
+  background-color: #5333cd;
+  border: 7px solid black;
+  /* border-right: none; */
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  height: 350px;
+  padding: 10px;
+  overflow: auto;
+}
+.dropdownItem {
+  margin: 2px 0 2px 2px;
+  color: white;
+  padding: 7px;
+}
+.dropdownItem:hover {
+  background-color: black;
+}
+
+.chart {
+  margin: 30px;
+  margin-bottom: 0;
+}
+
+.stockInfo {
+  width: auto;
+  height: auto;
+  margin: 50px 20px;
+  padding: 15px;
+  background-color: #5333cd;
+  border: 7px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.stockInfo {
+  width: auto;
+  height: auto;
+  margin: 50px 20px;
+  padding: 15px;
+  background-color: #5333cd;
+  border: 7px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* inven */
+.invenOutline {
+  width: auto;
+  height: auto;
+  border: 7px solid black;
+  border-radius: 20px;
+}
+.invenArea {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  border: 7px solid #5333cd;
+  border-radius: 15px;
+  background-color: #5333cd;
+  color: white;
+
+  /* padding: 20px; */
+}
+
+.inventory {
+  width: 30%;
+  height: auto;
+  /* background-color: white; */
+  padding: 10px;
+  margin: 20px;
+  /* display: grid; */
+}
+
+.stockInfoText > h3 {
+  padding: 5px;
+}
+.stockInfoText > h3:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 1s;
+}
+
+.invenlist {
+  width: 30%;
+  height: auto;
+  padding: 10px;
+  margin: 20px;
+}
+
+.buySell {
+  width: 25%;
+  height: auto;
+  padding: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buySell .buysellInput {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: 7px solid black;
+  background-color: #5333cd;
+  border-radius: 20px;
+}
+
+.buySell .buysellBtnArea {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+.buySell .buysellBtnArea > button {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: #5333cd;
+  color: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.buySell .buysellBtnArea > button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 4px solid #f4e603;
+}
+
+.logoArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoArea .logo {
+  width: 250px;
+  height: 200px;
+  background-image: url("../../../../config/img/ATULogo.png");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}

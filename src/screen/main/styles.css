@@ -1,0 +1,44 @@
+.tag1-enter {
+  opacity: 0;
+  transform: translateX(5%);
+}
+.tag1-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s, transform 1s;
+}
+
+/* tag2 */
+.tag2-enter {
+  opacity: 0;
+  transform: translateX(-5%);
+}
+.tag2-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 2s, transform 1s;
+  transition-delay: 300ms;
+}
+
+/* tag3 */
+.tag3-enter {
+  opacity: 0;
+  transform: translateX(5%);
+}
+.tag3-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 2s, transform 1s;
+  transition-delay: 400ms;
+}
+/* tag4 */
+.tag4-enter {
+  opacity: 0;
+  transform: translateX(-5%);
+}
+.tag4-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 2s, transform 1s;
+  transition-delay: 500ms;
+}

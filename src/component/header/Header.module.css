@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+  height: auto;
+  position: sticky;
+  top: 0;
+  background-color: "transparent";
+  transition: all linear 1s;
+  z-index: 1;
+}
+.scrollNavContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+  height: auto;
+  position: sticky;
+  top: 0;
+  background-color: rgba(44, 44, 44, 0.5);
+  transition: all linear 1s;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.navlist {
+  font-size: 1.2rem;
+  word-break: keep-all;
+  font-family: "SBAggroB";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+}
+.navlist:hover {
+  cursor: pointer;
+}
+
+.navlist:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #f5e603;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navlist:hover:after {
+  cursor: pointer;
+  transform: scaleX(1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  border-radius: 50%;
+  background-image: url("../../../config/img/headerATULogo.png");
+  background-size: 100% 100%;
+  margin: 10px;
+  text-decoration: none;
+}
+.logoCircle {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  border-bottom: white 3px solid;
+  color: white;
+}
+
+.navActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 120px;
+  transition: all linear 1s;
+}
+
+.darkness {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  animation-name: fadeAnim;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  z-index: 99;
+}
+
+.modalContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background-color: #5333cd;
+  border: 7px solid black;
+  border-radius: 10px;
+}
+
+.modalContainer .closeBtn {
+  background-image: url("../../../config/img/cancel.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+.modalContainer .closeBtn:hover {
+  cursor: pointer;
+}
+
+.modalContainer a {
+  text-decoration: none;
+}
+
+.modalContainer .logo {
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.modalContainer .kakaoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: #ffeb3a;
+  margin: 20px;
+  padding: 10px 25px 10px 20px;
+}
+
+.modalContainer .kakaoContainer span {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: end;
+  font-family: "KIMM_Bold";
+}
+
+.modalContainer .kakaoContainer .kakaoLogo {
+  background-image: url("../../../config/img/kakao-talk.png");
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.logOutContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: "transparent";
+  margin: 20px;
+  padding: 10px 25px 10px 20px;
+}
+.logOutContainer span {
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+  color: #f5e603;
+}
+.logOutContainer:hover {
+  cursor: pointer;
+  background-color: black;
+  border: 4px solid #f5e603;
+}
+
+@media (max-width: 920px) {
+  .navContainer {
+    height: 10vh;
+  }
+  .scrollNavContainer {
+    height: 10vh;
+  }
+  .navlist {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 868px) {
+  .navContainer {
+    grid-template-columns: repeat(1, 1fr);
+    height: 10vh;
+  }
+  .scrollNavContainer {
+    grid-template-columns: repeat(1, 1fr);
+    height: 10vh;
+  }
+  .navlist {
+    padding: 10px;
+  }
+  .logoContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .navlist {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 280px) {
+  .scrollNavContainer {
+    height: 15vh;
+  }
+}
+
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

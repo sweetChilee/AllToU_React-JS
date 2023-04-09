@@ -1,0 +1,208 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 0 50px 0 50px;
+}
+
+.stockArea {
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+}
+.stockArea .outLineStockEx {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+  border: 10px solid black;
+  /* border-top: none; */
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.stockArea .outLineStockEx .stockExArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border: 3px solid #5333cd;
+  /* border-top: 3px solid #5333cd; */
+  border-radius: 100px;
+}
+.speaker {
+  background-image: url("../../../../config/img/speaker2.png");
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.stockArea .outLineStockEx .stockExArea .stockEx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.searchArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  height: 70vh;
+  margin: 30px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+.searchArea .searchCompanyContainer {
+  padding: 10px;
+}
+.searchArea .searchCompanyContainer .companyInputBox {
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.searchArea .searchCompanyContainer .companyInput {
+  width: 85%;
+  height: auto;
+  font-size: 18px;
+  border: solid 4px black;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #5333cd;
+  padding: 10px;
+  color: #f4e603;
+}
+
+.searchArea .searchCompanyContainer .companyInput:focus {
+  /* width: 85%; */
+  height: auto;
+  background-color: black;
+  font-size: 24px;
+  border: solid 3px #5333cd;
+  border-radius: 10px;
+  outline: 5px solid black;
+  transition: 1s;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  color: #f4e603;
+}
+
+.searchArea .searchCompanyContainer .companyInputBox .companyBtn {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  font-size: 24px;
+  font-weight: 700;
+  border: solid 4px black;
+  border-left: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #5333cd;
+  padding: 8px;
+  padding-top: 5px;
+}
+
+.searchCompanyContainer .dropDownBox {
+  width: 90%;
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #5333cd;
+  border: 5px solid rgba(0, 0, 0, 1);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.3);
+  list-style-type: none;
+  z-index: 3;
+}
+
+.searchArea .gptSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.searchArea .gptSearch .gptInput {
+  width: 30%;
+  height: auto;
+  font-size: 18px;
+  border: solid 4px black;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #5333cd;
+  padding: 10px;
+  color: #f4e603;
+}
+.searchArea .gptSearch .gptInput:focus {
+  width: 80%;
+  height: auto;
+  background-color: black;
+  font-size: 24px;
+  border: solid 3px #5333cd;
+  border-radius: 10px;
+  outline: 5px solid black;
+  transition: 2s;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  color: #f4e603;
+}
+
+.searchArea .gptSearch .chatGptBtn {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  font-size: 24px;
+  font-weight: 700;
+  border: solid 4px black;
+  border-left: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #5333cd;
+  padding: 8px;
+  padding-top: 5px;
+}
+
+.searchArea .gptSearch .gptInput:focus .chatGptBtn {
+  padding: 20px;
+  background-color: white;
+}
+
+.searchArea .outLineStockEx .inputBoxArea .inputContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  border: 7px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1280px) {
+  .searchArea {
+  }
+}

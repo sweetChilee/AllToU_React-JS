@@ -1,0 +1,26 @@
+.footerArea {
+  width: auto;
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  color: white;
+  padding: 30px;
+}
+
+.footerArea > h1 {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 10px;
+  font-size: 10rem;
+  color: white;
+}
+
+.logo {
+  background-image: url("../../../config/img/headerATULogo.png");
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+}

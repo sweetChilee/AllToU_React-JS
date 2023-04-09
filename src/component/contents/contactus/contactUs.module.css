@@ -1,0 +1,137 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+.card {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  background-color: rgb(33, 33, 33);
+  min-width: 18.75rem;
+  max-width: 18.75rem;
+  min-height: 450px;
+  border-radius: 1.25rem;
+  margin: 30px;
+  padding: 30px;
+  border: none;
+  box-shadow: 5px 5px 5px black;
+}
+
+.profileImgArea {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profileImg {
+  width: 50%;
+  height: 50%;
+  background-image: url("../../../../config/img/PropfileWu1.png");
+  background-size: 100% 100%;
+}
+.profileImg2 {
+  width: 50%;
+  height: 50%;
+  background-image: url("../../../../config/img/ProfileMin.png");
+  background-size: 100% 100%;
+}
+.profileImg3 {
+  width: 40%;
+  height: 60%;
+  background-image: url("../../../../config/img/PropfileLee.png");
+  background-size: 100% 100%;
+}
+
+.profileText {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.profileArea {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+}
+
+.profileFirst {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.profileSecond {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.phone {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../config/img/phone-call.png");
+  background-size: 100% 100%;
+}
+.phone:hover {
+  background-image: url("../../../../config/img/phoneHover.png");
+}
+.email {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../config/img/email.png");
+  background-size: 100% 100%;
+}
+.email:hover {
+  background-image: url("../../../../config/img/emailHover.png");
+}
+.github {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../config/img/github.png");
+  background-size: 100% 100%;
+}
+.github:hover {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../config/img/githubHover.png");
+}
+
+@media (max-width: 680px) {
+  .main {
+    padding: 0;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    padding: 0;
+  }
+  .card {
+    min-width: 200px;
+    max-width: 12.5rem;
+  }
+  .phone {
+    width: 30px;
+    height: 30px;
+
+    background-size: 100% 100%;
+  }
+  .github {
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+  }
+}

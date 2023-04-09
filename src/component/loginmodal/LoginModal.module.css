@@ -1,0 +1,81 @@
+.darkness {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  animation-name: fadeAnim;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  z-index: 99;
+}
+
+.modalContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background-color: #5333cd;
+  border: 7px solid black;
+  border-radius: 10px;
+}
+
+.modalContainer .closeBtn {
+  background-image: url("../../../config/img/cancel.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+.modalContainer .closeBtn:hover {
+  cursor: pointer;
+}
+
+.modalContainer a {
+  text-decoration: none;
+}
+
+.modalContainer .logo {
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.modalContainer .kakaoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: #ffeb3a;
+  margin: 20px;
+  padding: 10px 25px 10px 20px;
+}
+
+.modalContainer .kakaoContainer span {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: end;
+  font-family: "KIMM_Bold";
+}
+
+.modalContainer .kakaoContainer .kakaoLogo {
+  background-image: url("../../../config/img/kakao-talk.png");
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
