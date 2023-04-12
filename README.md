@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# ALL TO U
+### 당신의 올바른 투자습관을 위한 모의투자 프로그램 사이트!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### BackEnd 2명, FrontEnd 1명, 총 3명의 팀 원이서 7일 간 진행한 프로젝트
 
-## Available Scripts
 
-In the project directory, you can run:
+## Role
+프론트엔드(UI/UX 설계 및 디자인, REST API 와의 통신 등 담당)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![올투 메인 (1)](https://user-images.githubusercontent.com/120015594/231397549-b7d36408-ab2c-41c1-b73e-3aa9f120ebd8.png)
+<img width="1424" alt="스크린샷 2023-04-10 오후 5 29 07" src="https://user-images.githubusercontent.com/120015594/231397375-e3002a21-1300-406d-9017-d8ab2a243e12.png">
+<img width="1424" alt="스크린샷 2023-04-10 오후 5 31 13" src="https://user-images.githubusercontent.com/120015594/231397385-db8a9024-c191-4094-b4a7-e981e20cbde9.png">
+<img width="1424" alt="스크린샷 2023-04-10 오후 5 33 02" src="https://user-images.githubusercontent.com/120015594/231397397-47096e03-a3d6-452f-af72-8c93198324bb.png">
+<img width="750" alt="스크린샷 2023-04-10 오후 5 36 12" src="https://user-images.githubusercontent.com/120015594/231397405-f6453ab4-05dd-44dc-84a5-a60782f996f0.png">
+<img width="1423" alt="스크린샷 2023-04-10 오후 5 37 50" src="https://user-images.githubusercontent.com/120015594/231397412-d884fc62-6987-441a-b8ac-73001f91ce59.png">
+<img width="1423" alt="스크린샷 2023-04-10 오후 5 38 44" src="https://user-images.githubusercontent.com/120015594/231397417-9a4ef8d9-5b55-4d98-92bf-893a2b26381f.png">
