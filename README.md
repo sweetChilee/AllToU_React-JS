@@ -4,8 +4,8 @@
 #### BackEnd 2명, FrontEnd 1명, 총 3명의 팀 원이서 7일 간 진행한 프로젝트
 
 
-## Role
-프론트엔드(UI/UX 설계 및 디자인, REST API 와의 통신 등 담당)
+## My Role
+#### 프론트엔드(UI/UX 설계 및 디자인, REST API 와의 통신 등 담당)
 
 
 ![올투 메인 (1)](https://user-images.githubusercontent.com/120015594/231397549-b7d36408-ab2c-41c1-b73e-3aa9f120ebd8.png)
